@@ -1,0 +1,82 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 60px;
+}
+
+.card {
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid #2c3e50 !important;
+  background-color: #243b55 !important; /* fondo de las cards más claro */
+  color: #f1f5fa !important; /* texto claro dentro de las cards */
+}
+
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 🎨 Paleta midnight blue refinada */
+body {
+  background-color: #1b263b !important; /* fondo general */
+  color: #e0e6ed !important; /* texto principal */
+}
+
+.navbar,
+footer,
+.bg-black {
+  background-color: #0d1b2a !important; /* navbar y footer */
+}
+
+.text-secondary {
+  color: #a5b8cf !important; /* texto gris-azul claro */
+}
+
+.btn-outline-light {
+  color: #e0e6ed;
+  border-color: #e0e6ed;
+}
+
+.btn-outline-light:hover {
+  background-color: #415a77;
+  border-color: #e0e6ed;
+}
+
+/* Para enlaces y títulos */
+h1, h2, h5 {
+  color: #f1f5fa !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a5b8cf;
+}
+
+.profile-img {
+  max-width: 70%; /* hace la imagen más pequeña y proporcional */
+  border-radius: 15px; /* bordes suaves */
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* sombra elegante */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  filter: brightness(0.95) contrast(1.05) saturate(1.1); /* realce sutil */
+
+  
+  background: radial-gradient(circle at center, #1b263b 40%, transparent 100%);
+
+  
+  
+
+}
+
+.profile-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  filter: brightness(1) contrast(1.1) saturate(1.2);
+}
