@@ -69,14 +69,18 @@ a:hover {
 
   
   background: radial-gradient(circle at center, #1b263b 40%, transparent 100%);
-
-  
-  
-
 }
 
 .profile-img:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
   filter: brightness(1) contrast(1.1) saturate(1.2);
+}
+
+.card-title {
+  transition: color 0.3s, transform 0.3s;
+}
+.card-title:hover {
+  color: #ffc107; /* amarillo brillante */
+  transform: scale(1.05);
 }
