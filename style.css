@@ -1,86 +1,117 @@
-html {
-  scroll-behavior: smooth;
+/* ======================================= */
+/* ====== ARMONIZACIÓN DE TEMA CLARO ====== */
+/* ======================================= */
+
+/* Definición de Paleta de Colores:
+ * Primario (Marca): #0d6efd (Azul Bootstrap)
+ * Secundario (Fondo de Contraste): #f8f9fa (Gris Claro)
+ * Texto: #212529 (Gris Oscuro)
+ */
+
+body {
+  /* Aplicamos el color de fondo general a todo el body */
+  background-color: #ffffff; /* Blanco limpio */
+  color: #212529; /* Texto oscuro por defecto */
+  font-family: 'Poppins', sans-serif;
+  margin-top: 56px; /* Espacio para la navbar fija */
 }
 
+/* Secciones generales: sin fondo forzado para aprovechar el color del body */
 section {
-  scroll-margin-top: 60px;
+  padding: 4rem 1rem;
 }
 
+/* Títulos: Usamos el color de la marca para destacar */
+h1, h2, h3, h4, h5 {
+  color: #0d6efd; /* Azul profesional */
+  font-weight: 700;
+}
+
+/* Texto normal (Párrafos, listas) */
+p, li, span {
+  color: #495057; /* Gris oscuro para fácil lectura */
+}
+
+/* -------------------- */
+/* Componentes Comunes */
+/* -------------------- */
+
+/* Tarjetas (Habilidades y Proyectos) */
 .card {
-  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-  height: 100%;
-  border-radius: 12px;
-  border: 1px solid #2c3e50 !important;
-  background-color: #243b55 !important; /* fondo de las cards más claro */
-  color: #f1f5fa !important; /* texto claro dentro de las cards */
+  background-color: #f8f9fa; /* Fondo gris claro para destacarlas */
+  border: 1px solid #dee2e6;
+  transition: transform 0.2s;
 }
 
 .card:hover {
-  transform: scale(1.04);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* 🎨 Paleta midnight blue refinada */
-body {
-  background-color: #1b263b !important; /* fondo general */
-  color: #e0e6ed !important; /* texto principal */
+/* Botones: Usamos el estilo outline-primary para consistencia */
+.btn-outline-light, .btn-outline-primary, .btn-secondary {
+  border-color: #0d6efd;
+  color: #0d6efd;
+  background-color: transparent;
+  transition: background-color 0.2s, color 0.2s;
 }
 
-.navbar,
-footer,
-.bg-black {
-  background-color: #0d1b2a !important; /* navbar y footer */
+.btn-outline-light:hover, .btn-outline-primary:hover, .btn-secondary:hover {
+  background-color: #0d6efd;
+  color: #fff;
 }
 
-.text-secondary {
-  color: #a5b8cf !important; /* texto gris-azul claro */
+/* Navbar (Ahora con tema CLARO) */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
 }
 
-.btn-outline-light {
-  color: #e0e6ed;
-  border-color: #e0e6ed;
+.navbar-brand, .nav-link {
+  color: #212529 !important; /* Aseguramos que el texto sea oscuro */
 }
 
-.btn-outline-light:hover {
-  background-color: #415a77;
-  border-color: #e0e6ed;
+.nav-link.active, .nav-link:hover {
+  color: #0d6efd !important; /* Destacado en azul */
 }
 
-/* Para enlaces y títulos */
-h1, h2, h5 {
-  color: #f1f5fa !important;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: #a5b8cf;
-}
-
+/* Perfil */
 .profile-img {
-  max-width: 70%; /* hace la imagen más pequeña y proporcional */
-  border-radius: 15px; /* bordes suaves */
+  width: 250px;
+  height: 250px;
   object-fit: cover;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* sombra elegante */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  filter: brightness(0.95) contrast(1.05) saturate(1.1); /* realce sutil */
-
-  
-  background: radial-gradient(circle at center, #1b263b 40%, transparent 100%);
+  border-radius: 50%;
+  border: 5px solid #0d6efd;
 }
 
-.profile-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-  filter: brightness(1) contrast(1.1) saturate(1.2);
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  color: #6c757d;
 }
 
-.card-title {
-  transition: color 0.3s, transform 0.3s;
+footer p {
+    color: #6c757d !important;
 }
-.card-title:hover {
-  color: #ffc107; /* amarillo brillante */
-  transform: scale(1.05);
+
+/* Ajuste para el hero (Sección Inicio) */
+#inicio {
+    /* Esta sección mantendrá un contraste visual */
+    background-color: #0d6efd; /* Fondo azul */
+    color: #ffffff;
+}
+
+#inicio h1, #inicio p {
+    color: #ffffff !important;
+}
+
+#inicio .btn-outline-light {
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+#inicio .btn-outline-light:hover {
+    background-color: #ffffff !important;
+    color: #0d6efd !important;
 }
