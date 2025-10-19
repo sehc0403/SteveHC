@@ -95,3 +95,8 @@ footer p {
     background-color: #ffffff !important;
     color: #20318a !important;
 }
+.btn-primary {
+    background-color: #20318a;
+    border-color: #364bb3;    
+    color: #ffffff;           
+}
