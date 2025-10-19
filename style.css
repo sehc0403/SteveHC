@@ -11,7 +11,7 @@ section {
 }
 
 h1, h2, h3, h4, h5 {
-  color: #0d6efd; 
+  color: #20318a; 
   font-weight: 700;
 }
 
@@ -32,14 +32,14 @@ p, li, span {
 
 
 .btn-outline-light, .btn-outline-primary, .btn-secondary {
-  border-color: #0d6efd;
-  color: #0d6efd;
+  border-color: #20318a;
+  color: #20318a;
   background-color: transparent;
   transition: background-color 0.2s, color 0.2s;
 }
 
 .btn-outline-light:hover, .btn-outline-primary:hover, .btn-secondary:hover {
-  background-color: #0d6efd;
+  background-color: #20318a;
   color: #fff;
 }
 
@@ -53,8 +53,9 @@ p, li, span {
 }
 
 .nav-link.active, .nav-link:hover {
-  color: #0d6efd !important; 
+  color: #20318a !important; 
 }
+
 
 /* Perfil */
 .profile-img {
@@ -62,7 +63,7 @@ p, li, span {
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid #0d6efd;
+  border: 5px solid #20318a;
 }
 
 /* Footer */
@@ -77,7 +78,7 @@ footer p {
 }
 
 #inicio {
-    background-color: #0d6efd;
+    background-color: #20318a;
     color: #ffffff;
 }
 
@@ -92,5 +93,5 @@ footer p {
 
 #inicio .btn-outline-light:hover {
     background-color: #ffffff !important;
-    color: #0d6efd !important;
+    color: #20318a !important;
 }
