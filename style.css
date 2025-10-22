@@ -98,45 +98,39 @@ footer p {
 .btn-primary {
     background-color: #20318a;
     border-color: #364bb3;    
-    color: #ffffff;           
-}.phone-mockup {
-  width: 270px;
-  height: 550px;
-  background-color: #000;
-  border-radius: 35px;
-  padding: 12px;
-  position: relative;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    color: #ffffff;      
+}#carouselFinanzas {
   overflow: hidden;
 }
 
-.phone-screen {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 25px;
+#carouselFinanzas img.app-img {
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 1rem;
 }
 
-/* Cámara simulada del teléfono */
-.phone-mockup::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 6px;
-  background-color: #333;
-  border-radius: 3px;
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  transition: all 0.3s ease;
+  margin: 0 5px;
 }
 
-/* Ajustes específicos del carrusel */
-.phone-carousel {
-  max-width: 270px;
-  margin: 0 auto;
+.carousel-indicators .active {
+  background-color: #20318a; 
+  transform: scale(1.3);
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1); /* Íconos blancos sobre fondo oscuro */
+.carousel-fade .carousel-item {
+  transition: opacity 0.8s ease-in-out;
+}
+
+
+#carouselFinanzas img.app-img:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s ease;
 }
