@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto 1 - Steve Hernández</title>
+  <title>App de Finanzas Personales - Steve Hernández</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,22 +17,84 @@
   </nav>
 
   <section class="container py-5 text-center">
-    <h1 class="fw-bold mb-4">Proyecto 1: Finanzas Personales al Instante</h1>
-    <p class="lead">Aquí podrás describir tu proyecto, su propósito, las tecnologías utilizadas y los resultados obtenidos.</p>
-    <p>Puedes incluir capturas, enlaces o incluso videos.</p>
-    
-    <div class="row mt-5">
-        <div class="col-lg-8 mx-auto">
-            <div class="card p-4">
-                <h3 class="card-title">Tecnologías Utilizadas</h3>
-                <ul class="list-unstyled text-start">
-                    <li><p><strong>Base de Datos:</strong> MySQL para persistencia de datos</p></li>
-                    <li><p><strong>Backend:</strong> APIs RESTful con Node.js y Express.</p></li>
-                    <li><p><strong>Frontend:</strong> Interfaz de usuario con React y Bootstrap.</p></li>
-                </ul>
-            </div>
-            <a href="proyectos.html" class="btn btn-outline-primary mt-4">Ver otros proyectos</a>
+    <h1 class="fw-bold mb-3">App de Finanzas Personales</h1>
+    <p class="lead mb-4">
+      Aplicación móvil desarrollada en <strong>Flutter</strong> para el control de ingresos, egresos y balances financieros,
+      conectada a una API propia en <strong>Python (Flask)</strong> con base de datos <strong>SQL Server</strong>.
+    </p>
+
+
+    <!-- Carrusel de imágenes con mockup -->
+    <div id="carouselFinanzas" class="carousel slide phone-carousel mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <div class="phone-mockup mx-auto">
+            <img src="img/p1/dashboard_mensual.png" class="phone-screen" alt="Dashboard de Finanzas">
+          </div>
         </div>
+        <div class="carousel-item">
+          <div class="phone-mockup mx-auto">
+            <img src="img/p1/gastos.png" class="phone-screen" alt="Registro de Gastos">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="phone-mockup mx-auto">
+            <img src="img/p1/ingresos.png" class="phone-screen" alt="Registro de Ingresos">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselFinanzas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselFinanzas" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Descripción -->
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="card p-4 text-start">
+          <h3 class="card-title text-center mb-3">Descripción del Proyecto</h3>
+          <p>
+            Esta app permite gestionar de manera sencilla las finanzas personales desde cualquier dispositivo Android.
+            Los usuarios pueden agregar movimientos, clasificarlos por categoría y obtener reportes visuales en tiempo real.
+          </p>
+          <p>
+            El backend fue desarrollado en <strong>Python</strong> con el framework <strong>Flask</strong>, utilizando autenticación
+            <strong>JWT</strong> y conexión a <strong>SQL Server</strong> mediante <code>pyodbc</code>.  
+            El frontend móvil fue desarrollado en <strong>Flutter</strong> con manejo de estado mediante <strong>Provider</strong>.
+          </p>
+        </div>
+
+        <!-- Tecnologías -->
+        <div class="card p-4 mt-4">
+          <h3 class="card-title text-center mb-3">Tecnologías Utilizadas</h3>
+          <ul class="list-unstyled">
+            <li><p><strong>Frontend móvil:</strong> Flutter</p></li>
+            <li><p><strong>Backend:</strong> Python (Flask, JWT, pyodbc)</p></li>
+            <li><p><strong>Base de datos:</strong> SQL Server</p></li>
+            <li><p><strong>Infraestructura:</strong> API REST con seguridad por tokens</p></li>
+          </ul>
+        </div>
+
+        <!-- Resultados -->
+        <div class="card p-4 mt-4">
+          <h3 class="card-title text-center mb-3">Características Principales</h3>
+          <ul>
+            <li>Dashboard con resumen financiero mensual</li>
+            <li>Gráficos dinámicos de ingresos y egresos</li>
+            <li>Control de categorías personalizadas</li>
+            <li>Autenticación segura (JWT)</li>
+            <li>Conexión en tiempo real a la API</li>
+          </ul>
+        </div>
+
+        <!-- Enlaces -->
+        <div class="text-center mt-5">
+         <a href="proyectos.html" class="btn btn-secondary">Ver otros proyectos</a>
+        </div>
+      </div>
     </div>
   </section>
 
