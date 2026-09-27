@@ -98,6 +98,21 @@
             color: var(--primary);
         }
 
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 24px;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--muted);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+        }
+
         .notice {
             margin-top: 36px;
             padding: 18px 20px;
@@ -129,6 +144,7 @@
 <body>
     <main class="container">
         <article class="card">
+            <a href="index.html" class="back-link">&larr; Volver al inicio</a>
             <div class="brand">
                 <div class="brand-mark">SEH</div>
                 <span>SEH Tech</span>
@@ -286,6 +302,7 @@
         </article>
 
         <footer>
+            <p><a href="index.html">&larr; Volver al inicio</a></p>
             © 2026 SEHTech. Todos los derechos reservados.
         </footer>
     </main>
